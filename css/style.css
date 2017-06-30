@@ -22,7 +22,9 @@ header{
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: pink;
+  background-image: url("../images/office-low-poly.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 header .title{
   display: flex;
@@ -138,6 +140,73 @@ header .title{
   100% { opacity: 0}
 }
 
+/* testimony */
+.testimony{
+  background: linear-gradient(to right, #75B8C8, #1C7BFF);
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.testimony h3{
+  color: #333333;
+  margin-bottom: 2.5rem;
+}
+.testimony .card{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 100vw;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  color: #333333; 
+}
+.testimony .card img{
+  width: 200px;
+  height: auto;
+}
+.testimony .card blockquote{
+  text-align: center;
+}
+.testimony .card cite{
+  align-self: flex-end;
+}
+.testimony .card:nth-of-type(1){
+  animation: slideIn 40s ease 0s infinite;
+}
+.testimony .card:nth-of-type(2){
+  animation: slideIn 40s ease 5s infinite;
+}
+.testimony .card:nth-of-type(3){
+  animation: slideIn 40s ease 10s infinite;
+}
+.testimony .card:nth-of-type(4){
+  animation: slideIn 40s ease 15s infinite;
+}
+.testimony .card:nth-of-type(5){
+  animation: slideIn 40s ease 20s infinite;
+}
+.testimony .card:nth-of-type(6){
+  animation: slideIn 40s ease 25s infinite;
+}
+.testimony .card:nth-of-type(7){
+  animation: slideIn 40s ease 30s infinite;
+}
+.testimony .card:nth-of-type(8){
+  animation: slideIn 40s ease 35s infinite;
+}
+@keyframes slideIn{
+  0% {left: 100vw;}
+  1% {left: 25vw;}
+  10% {left: 25vw;}
+  11% {left: -100vw;}
+  100%{left: -100vw;}
+}
+
 /* footer */
 footer{
   padding-top: 6%;
@@ -214,11 +283,47 @@ footer .emphasize{
   order: 2;
   }
 
+  /* testimony */
+  .testimony{
+  height: 100vh;
+  overflow-y: auto;
+  }
+  .testimony .card{
+    width: 80vw;
+  }
+  @keyframes slideIn{
+  0% {left: 100vw;}
+  1% {left: 7vw;}
+  10% {left: 7vw;}
+  11% {left: -100vw;}
+  100%{left: -100vw;}
+  }
+
   /* footer */
   footer .main-footer{
   flex-direction: column;
   }
   footer .contact-info{
     overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  html{
+    font-size: 1rem;
+  }
+  html h3{
+    font-size: 3rem;
+  }
+  .testimony{
+    height: 100vh;
+    overflow-y: auto;
+  }
+  @keyframes slideIn{
+  0% {left: 100vw;}
+  1% {left: 4vw;}
+  10% {left: 4vw;}
+  11% {left: -100vw;}
+  100%{left: -100vw;}
   }
 }
