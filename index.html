@@ -7,22 +7,72 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	$(window).scroll(function() {
+	  if ($(document).scrollTop() > 200) {
+	    $("nav").addClass("fill");
+	  } else {
+	    $("nav").removeClass("fill");
+	  }
+	});
+	jQuery(function($){
+       $( '.nav-icon' ).click(function(){
+       $('.mob-menu').toggleClass('expand')
+       })
+    });
+    $(document).ready(function(){
+	  $('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	  });
+	});
+	</script>
 </head>
 <body>
-	<nav>
+	<nav class="navbar">
 		<h2>Nebula Infomatique</h2>
-		<ul>
-			<li>HOME</li>
-			<li>ABOUT US</li>
-			<li>PRODUCTS &<br>SERVICES</li>
-			<li>TESTIMONY</li>
-			<li>CONTACT US</li>
+		<div id="nav-icon" class="nav-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="menu mob-menu">
+			<li><a href="#home">HOME</a></li>
+			<li><a href="#about-us">ABOUT US</a></li>
+			<li><a href="#products">PRODUCTS & SERVICES</a></li>
+			<li><a href="#testimony">TESTIMONY</a></li>
+			<li><a href="#contact-us">CONTACT US</a></li>
 		</ul>
 	</nav>
-	<header>
+	<header id="home">
 
 	</header>
 	<main>
+		<span id="about-us" class="anchor">&nbsp</span>
 		<section class="about-us">
 			<div class="text-container">
 				<h3>About Us</h3>
@@ -36,6 +86,7 @@
 				</p>
 			</div>
 		</section>
+		<span id="products" class="anchor">&nbsp</span>
 		<section class="products">
 			<div class="img-container">
 				<img src="images/lg-icons-04.png">
@@ -114,7 +165,9 @@
 			</div>
 			</div>
 		</section>
+		
 		<section class="testimony">
+		<span id="testimony" class="anchor">&nbsp</span>
 			<h3>Testimony</h3>
 			<div class="card">
 				<img class="logo" src="images/logo-cisco.png">
@@ -215,6 +268,7 @@
 		</section>
 	</main>
 	<footer>
+	<span id="contact-us" class="anchor">&nbsp</span>
 		<h3>Get In Touch</h3>
 		<section class="main-footer">
 			<div class="contact-info">
@@ -240,9 +294,5 @@
 		<p>nebulainfomatique.com</p>
 		<p>&copy;2017</p>
 	</footer>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script type="text/javascript">
-
-	</script>
 </body>
 </html>
