@@ -2,35 +2,30 @@
 <html>
 <head>
 	<title>Nebula | Welcome</title>
-	<meta http-equiv="refres" content="3">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
-	  // Add smooth scrolling to all links
 	  $("a").on('click', function(event) {
-
-	    // Make sure this.hash has a value before overriding default behavior
 	    if (this.hash !== "") {
-	      // Prevent default anchor click behavior
 	      event.preventDefault();
-
-	      // Store hash
 	      var hash = this.hash;
-
-	      // Using jQuery's animate() method to add smooth page scroll
-	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 	      $('html, body').animate({
 	        scrollTop: $(hash).offset().top
 	      }, 800, function(){
-	   
-	        // Add hash (#) to URL when done scrolling (default click behavior)
 	        window.location.hash = hash;
 	      });
-	    } // End if
+	    }
 	  });
 	});
 	$(window).scroll(function() {
@@ -72,7 +67,7 @@
 
 	</header>
 	<main>
-		<span id="about-us" class="anchor">&nbsp</span>
+		<span id="about-us" class="anchor">&nbsp;</span>
 		<section class="about-us">
 			<div class="text-container">
 				<h3>About Us</h3>
@@ -86,12 +81,12 @@
 				</p>
 			</div>
 		</section>
-		<span id="products" class="anchor">&nbsp</span>
+		<span id="products" class="anchor">&nbsp;</span>
 		<section class="products">
 			<div class="img-container">
-				<img src="images/lg-icons-04.png">
-				<img src="images/lg-icons-06.png">
-				<img src="images/lg-icons-05.png">
+				<img src="images/products-icon-01.png" title="Survillance" alt="Survillance">
+				<img src="images/products-icon-02.png" title="Communication System" alt="Communication System">
+				<img src="images/products-icon-03.png" title="Data Switches" alt="Data Switches">
 			</div>
 			<div class="text-container">
 				<h3>Products</h3>
@@ -108,9 +103,9 @@
 		<div class="services-full-width">
 		<section class="services">
 			<div class="img-container">
-				<img src="images/lg-icons-01.png">
-				<img src="images/lg-icons-02.png">
-				<img src="images/lg-icons-03.png">
+				<img src="images/services-icon-01.png" title="On Call Service" alt="On Call Service">
+				<img src="images/services-icon-02.png" title="Annual Maintainance Contract" alt="Annual Maintainance Contract">
+				<img src="images/services-icon-03.png" title="Installation" alt="Installation">
 			</div>
 			<div class="text-container">
 				<h3>Services</h3>
@@ -134,34 +129,34 @@
 			</div>
 			<div class="slides-container">
 			<div class='slider'>
-			  <img class='slide1' src="images/logo-alcatel.svg">
+			  <img class='slide1' src="images/logo-alcatel.jpg">
 			  <img class='slide2' src="images/logo-cpplus.jpg">
-			  <img class='slide3' src="images/logo-polycom.png">
+			  <img class='slide3' src="images/logo-polycom.jpg">
 			</div>
 			<div class='slider'>
 			  <img class='slide1' src="images/logo-panasonic.jpg">
-			  <img class='slide2' src="images/logo-hikvision.png">
-			  <img class='slide3' src="images/logo-samsung.png">
+			  <img class='slide2' src="images/logo-hikvision.jpg">
+			  <img class='slide3' src="images/logo-samsung.jpg">
 			</div>
 			<div class='slider'>
-			  <img class='slide1' src="images/logo-hp.png">
-			  <img class='slide2' src="images/logo-dlink.png">
-			  <img class='slide3' src="images/logo-sanyo.png">
+			  <img class='slide1' src="images/logo-hp.jpg">
+			  <img class='slide2' src="images/logo-dlink.jpg">
+			  <img class='slide3' src="images/logo-sanyo.jpg">
 			</div>
 			<div class='slider'>
-			  <img class='slide1' src="images/logo-cisco.png">
-			  <img class='slide2' src="images/logo-beetel.jpeg">
-			  <img class='slide3' src="images/logo-sony.png">
+			  <img class='slide1' src="images/logo-cisco.jpg">
+			  <img class='slide2' src="images/logo-beetel.jpg">
+			  <img class='slide3' src="images/logo-sony.jpg">
 			</div>
 			<div class='slider'>
-			  <img class='slide1' src="images/logo-honeywell.png">
-			  <img class='slide2' src="images/logo-alcatel.svg">
-			  <img class='slide3' src="images/logo-hp.png">
+			  <img class='slide1' src="images/logo-honeywell.jpg">
+			  <img class='slide2' src="images/logo-alcatel.jpg">
+			  <img class='slide3' src="images/logo-hp.jpg">
 			</div>
 			<div class='slider'>
-			  <img class='slide1' src="images/logo-sony.png">
-			  <img class='slide2' src="images/logo-cisco.png">
-			  <img class='slide3' src="images/logo-honeywell.png">
+			  <img class='slide1' src="images/logo-sony.jpg">
+			  <img class='slide2' src="images/logo-cisco.jpg">
+			  <img class='slide3' src="images/logo-honeywell.jpg">
 			</div>
 			</div>
 		</section>
@@ -170,7 +165,7 @@
 		<span id="testimony" class="anchor">&nbsp</span>
 			<h3>Testimony</h3>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -182,7 +177,7 @@
 				<cite>Lennon</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -194,7 +189,7 @@
 				<cite>Paul</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -206,7 +201,7 @@
 				<cite>Ringo</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -218,7 +213,7 @@
 				<cite>George</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -230,7 +225,7 @@
 				<cite>Chris</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -242,7 +237,7 @@
 				<cite>Guy</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -254,7 +249,7 @@
 				<cite>Jhonny</cite>
 			</div>
 			<div class="card">
-				<img class="logo" src="images/logo-cisco.png">
+				<img class="logo" src="images/logo-cisco.jpg">
 				<blockquote>
 				<span>&ldquo;</span>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -268,7 +263,7 @@
 		</section>
 	</main>
 	<footer>
-	<span id="contact-us" class="anchor">&nbsp</span>
+	<span id="contact-us" class="anchor">&nbsp;</span>
 		<h3>Get In Touch</h3>
 		<section class="main-footer">
 			<div class="contact-info">
@@ -293,6 +288,24 @@
 		<h4>NEBULA INFOMATIQUE PVT. LTD.</h4>
 		<p>nebulainfomatique.com</p>
 		<p>&copy;2017</p>
+		<nav>
+			<section class="important-links">
+				<ul>
+					<li><a href="#home">Top of page</a></li>
+					<li><a href="#" target="_blank">Careers</a></li>
+					<li><a href="#" target="_blank">Catalouge</a></li>
+				</ul>
+			</section>
+			<section class="social">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/umesh-parashar-609b0569/" target="_blank"><img src="images/Linkedin.png" ></a></li>
+					<li><a href="https://www.facebook.com/umesh.parashar.35/" target="_blank"><img src="images/Facebook.png"></a></li>
+				</ul>
+			</section>
+			<section class="developer">
+				<span>Designed & Developed with &hearts; by<br><a href="https://github.com/nishchayp" target="_blank"><i>Nishchay Parashar</i></a> + <a href="credits.html" target="_blank"><i>help from friends around web</i></a></span>
+			</section>
+		</nav>
 	</footer>
 </body>
 </html>

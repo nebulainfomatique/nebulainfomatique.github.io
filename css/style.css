@@ -1,7 +1,7 @@
 html{
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 html h3{
   font-size: 4.5rem;
@@ -72,11 +72,11 @@ html .anchor{
 
 /* header */
 header{
-  min-width: 100vw;
-  min-height: 100vh;
+  max-width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url("../images/a.jpg");
+  background-image: url("../images/hero-img.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
 }
@@ -94,6 +94,7 @@ header{
 
 /* products */
 .products{
+  /*width: 100vw;*/
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -105,6 +106,16 @@ header{
   justify-content: space-around;
   order: 1;
 }
+.products .img-container img{
+  width: 15vw;
+  height: 15vw;
+  /*transition: all 0.6s ease;
+  backface-visibility: hidden;*/
+}
+/*.products .img-container img:hover{
+  transform: rotateY(180deg);
+}*/
+
 .products .text-container{
   width: 40%;
   padding: 1.25rem 5%;
@@ -127,6 +138,10 @@ header{
   justify-content: space-around;
   order: 2;
 }
+.services .img-container img{
+  width: 15vw;
+  height: 15vw;
+}
 .services .text-container{
   width: 40%;
   padding: 1.25rem 5%;
@@ -145,7 +160,7 @@ header{
 }
 .slider {
   width: 30vw;
-  height: 20vh;
+  height: 15vh;
   margin: 4vh auto;
   position: relative;
 }
@@ -192,7 +207,7 @@ header{
 /* testimony */
 .testimony{
   background: linear-gradient(to right, #75B8C8, #1C7BFF);
-  width: 100vw;
+  max-width: 100vw;
   height: 70vh;
   text-align: center;
   position: relative;
@@ -260,7 +275,7 @@ header{
 /* footer */
 footer{
   padding-top: 6%;
-  padding-bottom: 1%;
+  padding-bottom: 0;
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
@@ -289,6 +304,36 @@ footer .or{
 }
 footer .emphasize{
   color: #75B8C8;
+}
+footer nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.75rem;
+  background-color: #171717;
+}
+footer nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+footer nav .social{
+  padding-left: 5.5rem;
+}
+footer nav ul li{
+  margin: auto 0.5vw;
+}
+footer nav span i{
+  border-bottom: 1px dotted #FFFFFF;
+}
+footer nav a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer nav img{
+  width: 35px;
+  height: auto;
 }
 
 
@@ -335,8 +380,6 @@ footer .emphasize{
     width: 40px;
     height: 45px;
     margin-top: 0.75rem;
-    /*position: relative;*/
-    /*margin: 50px auto;*/
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -414,30 +457,39 @@ footer .emphasize{
   .products{
     flex-direction: column;
     text-align: center;
-    width: 95%;
+    width: 90%;
   }
   .products .img-container{
-  width: 100%;
-  order: 1;
+    width: 100%;
+    order: 1;
   }
+  .products .img-container img{
+    width: 30vw;
+    height: 30vw;
+  }
+
   .products .text-container{
-  width: 100%;
-  order: 2;
+    width: 100%;
+    order: 2;
   }
 
   /* services */
   .services{
     flex-direction: column;
     text-align: center;
-    width: 95%;
+    width: 90%;
   }
   .services .img-container{
-  width: 100%;
-  order: 1;
+    width: 100%;
+    order: 1;
+  }
+  .services .img-container img{
+    width: 30vw;
+    height: 30vw;
   }
   .services .text-container{
-  width: 100%;
-  order: 2;
+    width: 100%;
+    order: 2;
   }
 
   /* testimony */
@@ -463,6 +515,13 @@ footer .emphasize{
   footer .contact-info{
     overflow-x: auto;
   }
+  footer nav{
+    flex-direction: column;
+    padding-bottom: 2vh;
+  }
+  footer nav .social{
+  padding-left: 0;
+}
 }
 
 @media only screen and (max-width: 480px){
@@ -512,6 +571,11 @@ footer .emphasize{
     top: 0.6rem;
   }
 
+  /* brands */
+  .slider {
+    width: 30vw;
+    height: 10vh;
+  }
 
   /* testimony */
   .testimony{
@@ -520,9 +584,18 @@ footer .emphasize{
   }
   @keyframes slideIn{
   0% {left: 100vw;}
-  1% {left: 4vw;}
-  10% {left: 4vw;}
+  1% {left: 5vw;}
+  10% {left: 5vw;}
   11% {left: -100vw;}
   100%{left: -100vw;}
+  }
+
+  /* footer */
+  footer .contact-info{
+    min-height: 265px;
+    min-width: 90vw;
+    max-width: 90vw;
+    background-color: #171717;
+    border-radius: 1rem;
   }
 }
